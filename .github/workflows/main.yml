@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az afd endpoint purge -g cv-01 --profile-name portfolio --domains www.heyvitech.com --content-paths '/*'
+           az afd endpoint purge -g cv-01 --profile-name portfolio --endpoint-name portfolio-fvgybdh0ambpg4bd.z01.azurefd.net --domains www.heyvitech.com --content-paths '/*'
 
   # Azure logout
     - name: logout
