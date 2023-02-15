@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge -g cv-01 --profile-name portfolio --endpoint-name portfolio-fvgybdh0ambpg4bd.z01.azurefd.net --content-paths '/*'
+           az cdn endpoint purge -g cv-01 --profile-name portfolio --name portfolio-fvgybdh0ambpg4bd.z01.azurefd.net --content-paths '/*'
 
   # Azure logout
     - name: logout
